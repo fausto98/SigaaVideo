@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sigaa Video</title>
+  <title>SIGAA-Video</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -12,24 +12,36 @@
 </head>
 
 <style>
-    .footer0 {
+    .header {
         display: block;
-
+        position: absolute;
+        top: 0px;
+        width: 100%; 
+        text-align:center;
+        color:#ffffff;
+        background-color:rgba(0, 123, 255, 0.90) ;
+    }
+    .sumiu {
+        display: none;
     }
     .footer { 
-        position: absolute;
-        color:#ffffff;
         display: block;
+        position: absolute;
         bottom: 0px;
-        width: 85%;
+        width: 100%;
         text-align:center;
+        color:#ffffff;
         background-color:rgba(0, 123, 255, 0.90) ;
         }
-    .container {
-        display: block;
-        height: 60%;
+
+    .margin-top {
+        margin-top: 50px;
+    }
+
+     .center {
+        display:block;
         width: auto;
-        border-radius: 10px;
+        margin: 0 auto 0 auto;
     }
 
     .body {
@@ -39,7 +51,7 @@
     .logo {
         display: block;
         height: 90px;
-        margin-top: 20px;
+        margin-top: 45px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
@@ -55,12 +67,10 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
 
-    .center {
-        display:block;
-        width: auto;
-        margin: 0 auto 0 auto
-    } 
-
+    @media (max-width: 682px) {
+        .footer {display: none;}
+        .sumiu {display: block;}
+    }
     /*
     #teste1 {
         background-color: red; 
@@ -73,17 +83,22 @@
     #teste3 {
         background-color: green; 
     }
-    */    
+    #teste4 {
+        background-color: darkcyan;
+    }
+    */
 </style>
 
 <body>
-
+    
     <div  id="teste1" class="container">
-
-        <form class="form-horizontal">
+        <div class="header row container">
+                IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
+            </div>
+        <form id="teste4" class="form-horizontal">
             
             <img id="sigaa_logo" class="logo" src=".\img\Sigga_Logo_OK.png" alt="Sigga_Logo"/>
-    
+            
             <div id="teste3"  class="center form-group col-sm-6">
                 <!--Div_Login-->
                 <label for="login" class="control-label col-sm-2">Login </label>
@@ -96,23 +111,27 @@
                     <input id="pwd" type="password" class="form-control form-custom shadow" placeholder="Password">
                 </div>
                 <!--Div_Checkbox-->
-                <div class="checkbox form col-sm-5">
+                <div id="teste2" class="checkbox form col-sm-12">
                     <label><input type="checkbox">Remember-me</label>
                 </div>         
-                <!--Div_Button ENTER -->
             </div>
             <!--Button Enter-->
-            <div class="center col-sm-offset col-sm-8">
-                <script type="text/javascript">const janela = (url) => window.location.href = "https://google.com";</script> 
-                    <button  onclick="janela('https://www.google.com')" type="button" class="center col-sm-5 btn btn-primary btn-custom shadow"> Enter </button>
+            <div id="teste2" class="center col-sm-12">
+                    <button  onclick="tela2('https://www.google.com')" type="button" class="center col-sm-5 btn btn-primary btn-custom shadow"> Enter </button>
+            </div>
+            <div id="teste3" align="center"class="center">
+                <div id="teste1" class="container row col-sm-6">
+                    <p align="center">cadastro aluno</p>
+                    <p align="center">cadastro professor</p>
                 </div>
-    
+            </div>
         </form>
         <!--Footer-->
-        <div class="footer">
-            SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
-        </div>
+        <div class="footer row container">
+                SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
+            </div>
+        
     </div>
-    
+<script type="text/javascript">const tela2 = (url) => window.location.href = "https://google.com";</script>     
 </body>
 </html>
