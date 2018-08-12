@@ -20,12 +20,11 @@
         position: absolute;
         color:#ffffff;
         display: block;
-        bottom: 1px;
+        bottom: 0px;
         width: 85%;
         text-align:center;
-        background-color:#007BFF ;
-        border-radius: 5px;
-    }
+        background-color:rgba(0, 123, 255, 0.90) ;
+        }
     .container {
         display: block;
         height: 60%;
@@ -61,7 +60,8 @@
         width: auto;
         margin: 0 auto 0 auto
     } 
-/*
+
+    /*
     #teste1 {
         background-color: red; 
     }
@@ -73,17 +73,17 @@
     #teste3 {
         background-color: green; 
     }
-*/    
+    */    
 </style>
 
 <body>
-<div id="teste2">
 
     <div  id="teste1" class="container">
 
         <form class="form-horizontal">
-            <img id="sigaa_logo" class="logo" src="D:\Usuário\Desktop\Fausto\Proj_SigaaVideo\Sigga_Logo_OK.png" alt="Sigga_Logo"/>
-        
+            
+            <img id="sigaa_logo" class="logo" src=".\img\Sigga_Logo_OK.png" alt="Sigga_Logo"/>
+    
             <div id="teste3"  class="center form-group col-sm-6">
                 <!--Div_Login-->
                 <label for="login" class="control-label col-sm-2">Login </label>
@@ -92,7 +92,7 @@
                 </div>
                 <!--Div_Password-->
                 <label for="pwd" class="control-label col-sm-2"> Password </label>
-                <div class="form-group col">
+                <div class="form-group col-sm">
                     <input id="pwd" type="password" class="form-control form-custom shadow" placeholder="Password">
                 </div>
                 <!--Div_Checkbox-->
@@ -101,17 +101,18 @@
                 </div>         
                 <!--Div_Button ENTER -->
             </div>
+            <!--Button Enter-->
             <div class="center col-sm-offset col-sm-8">
-                    <button type="button" class="center col-sm-5 btn btn-primary btn-custom shadow"> Enter </button>
+                <script type="text/javascript">const janela = (url) => window.location.href = "https://google.com";</script> 
+                    <button  onclick="janela('https://www.google.com')" type="button" class="center col-sm-5 btn btn-primary btn-custom shadow"> Enter </button>
                 </div>
     
         </form>
+        <!--Footer-->
         <div class="footer">
-                SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
+            SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
         </div>
     </div>
     
-</div>
-
 </body>
 </html>
