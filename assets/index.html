@@ -12,6 +12,27 @@
 </head>
 
 <style>
+    
+    .link {
+        margin-top:10px;
+        display: inline-flex;
+        width: 100%;
+        padding: 25px ;
+        
+    }
+    .link a {
+        width: auto;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 45px; 
+        margin-left: 20px;
+        padding: 10px 25px 10px 25px;
+        font-weight: 400; 
+        font-size: 15px;
+        text-align: center; 
+        color: rgba(0, 0, 0, 0.50);
+    }
+
     .header {
         display: block;
         position: absolute;
@@ -21,9 +42,7 @@
         color:#ffffff;
         background-color:rgba(0, 123, 255, 0.90) ;
     }
-    .sumiu {
-        display: none;
-    }
+
     .footer { 
         display: block;
         position: absolute;
@@ -31,14 +50,10 @@
         width: 100%;
         text-align:center;
         color:#ffffff;
-        background-color:rgba(0, 123, 255, 0.90) ;
+        background-color:rgba(0, 123, 255, 0.90);
         }
 
-    .margin-top {
-        margin-top: 50px;
-    }
-
-     .center {
+    .center {
         display:block;
         width: auto;
         margin: 0 auto 0 auto;
@@ -51,31 +66,50 @@
     .logo {
         display: block;
         height: 90px;
-        margin-top: 45px;
+        margin-top: 60px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 20px;
         padding-top: 15px;
     }
 
+    .icons {
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 50px;
+    }
+
     .btn-custom {
-        border-radius: 50px;
+        width: 200px;
+        border-radius: 45px;
         padding: 8px 35px 8px 35px;
+    }
+
+
+    .divider {
+        background-color: rgba(0, 123, 255); 
+        display: block;
+        height: 6px;
+        width: 100%;
+        margin: 20px auto 0 auto;
+        border-radius: 45px;
     }
 
     .shadow {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
 
-    @media (max-width: 682px) {
+    @media (max-width: 685px), (max-height:628px){
+        .header {display: none}
         .footer {display: none;}
-        .sumiu {display: block;}
     }
+
     /*
     #teste1 {
         background-color: red; 
     }
-
+  
     #teste2 {
         background-color: blue; 
     }
@@ -91,45 +125,62 @@
 
 <body>
     
-    <div  id="teste1" class="container">
+    <div  class="container">
         <div class="header row container">
                 IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
-            </div>
-        <form id="teste4" class="form-horizontal">
+        </div>
+        <form id="teste4" class="container form-horizontal">
             
-            <img id="sigaa_logo" class="logo" src=".\img\Sigga_Logo_OK.png" alt="Sigga_Logo"/>
+            <img id="sigaa_logo" class="logo" src=".\img\sigga_logo_new.png" alt="Sigga_Logo"/>
             
-            <div id="teste3"  class="center form-group col-sm-6">
-                <!--Div_Login-->
+            <div id="teste3"  class="center form-group col-sm-12 col-md-8 col-lg-6">
+
+                <!--Login-->
                 <label for="login" class="control-label col-sm-2">Login </label>
-                <div class="form-group col-sm">
+                <div class="form-group col-sm-12">
                     <input id="login" type="text" class="form-control form-custom shadow" placeholder="Username"/>
                 </div>
-                <!--Div_Password-->
+                <!--Password-->
                 <label for="pwd" class="control-label col-sm-2"> Password </label>
-                <div class="form-group col-sm">
+                <div class="form-group col-sm-12">
                     <input id="pwd" type="password" class="form-control form-custom shadow" placeholder="Password">
                 </div>
-                <!--Div_Checkbox-->
+
+                <!--Checkbox-->
                 <div id="teste2" class="checkbox form col-sm-12">
                     <label><input type="checkbox">Remember-me</label>
                 </div>         
+
             </div>
+
             <!--Button Enter-->
             <div id="teste2" class="center col-sm-12">
-                    <button  onclick="tela2('https://www.google.com')" type="button" class="center col-sm-5 btn btn-primary btn-custom shadow"> Enter </button>
+                    <button  onclick="tela2('https://www.google.com')" type="button" class="center btn btn-primary btn-custom shadow"> Enter </button>
             </div>
-            <div id="teste3" align="center"class="center">
-                <div id="teste1" class="container row col-sm-6">
-                    <p align="center">cadastro aluno</p>
-                    <p align="center">cadastro professor</p>
+
+            <div align="center" class="divider col-sm-12 col-md-8 col-lg-6"></div>
+
+            <!--Cadastro Aluno/Professor-->
+            <div id="teste1" class="center col-sm-12 col-md-12 col-lg-6 ">
+                <div align="center" class="link">
+                    <div id="teste2" align="center" class="center col-sm-6 ">
+                        <img class="icons" src=".\img\student.png" alt="aluno"/>
+                        <a href="#" class=" shadow btn-custom">cadastro aluno</a>
+                    </div>
+                    <div id="teste4" class="center col-sm-6" >
+                        <img  class="icons" src=".\img\professor.png" alt="professor"/> 
+                        <a href="#" class="shadow btn-custom">cadastro professor</a>
+                    </div>    
                 </div>
+                
             </div>
+   
         </form>
+
         <!--Footer-->
         <div class="footer row container">
-                SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
-            </div>
+            SIGAA | DTI - Diretoria da Tecnologia de Informação - IFAL - (82) 3194-1154 | Copyright © 2006-2018 - UFRN - app-01-sig.instancia1 v4.0.545 10/08/2018 00:04
+        </div>
         
     </div>
 <script type="text/javascript">const tela2 = (url) => window.location.href = "https://google.com";</script>     
