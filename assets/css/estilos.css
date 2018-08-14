@@ -53,3 +53,15 @@
     margin-top: 50px;
 }
 
+.cardFont {
+    font-size: 13px;
+}
+
+.mgT5 {
+    margin-top: 5px;
+}
+
+td {
+    font-weight: bold;
+    font-size: 12px;
+}
