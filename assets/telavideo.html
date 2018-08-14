@@ -40,9 +40,9 @@
                 <div class="col-3">
                     <div class="Hgpbtn">
                         <div class="btn-group btn-group-sm">
-                            <button class="btn btn-outline-dark">
+                            <a class="btn btn-outline-dark" href="./telaPrincipal.html">
                                 <i class="fa fa-home fa-sm"></i>
-                            </button> 
+                            </a> 
                             <button class="btn btn-outline-dark">
                                 <i class="fa fa-file-pdf-o fa-sm"></i>
                             </button>
@@ -69,12 +69,12 @@
             <div class="row">
                 <div class="col-2">
                     <div class="container">
-                        Menu Turma Virtual
-                        <div class="row">....</div>
+                        <h6>Menu Turma Virtual</h6>
+                        <div class="row"></div>
                     </div>
                     <nav class="bg-light">
                         <div id="accordion">
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#principal" aria-controls="principal">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#principal" aria-controls="principal">
                                 Principal 
                             </div>
                             <div class="text-white bg-secondary collapse" id="principal" data-parent="#accordion">
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
 
-                            <div class="bg-dark text-white container" data-toggle="collapse" data-target="#aluno" aria-controls="aluno">
+                            <div class="bg-dark text-white container btn-sm" data-toggle="collapse" data-target="#aluno" aria-controls="aluno">
                                 Alunos 
                             </div>
                             <div class="text-white bg-secondary collapse" id="aluno" data-parent="#accordion">
@@ -119,7 +119,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#materia" aria-controls="materia">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#materia" aria-controls="materia">
                             Materias
                             </div>
                             <div class="text-white bg-secondary collapse" id="materia" data-parent="#accordion">
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#atividade" aria-controls="atividade">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#atividade" aria-controls="atividade">
                                 Atividades
                             </div>
                             <div class="text-white bg-secondary collapse" id="atividade" data-parent="#accordion">
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#estatistica" aria-controls="estatistica">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#estatistica" aria-controls="estatistica">
                                 Estatisticas
                             </div>
                             <div class="text-white bg-secondary collapse" id="estatistica" data-parent="#accordion">
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#ajuda" aria-controls="ajuda">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#ajuda" aria-controls="ajuda">
                                 Ajuda
                             </div>
                             <div class="text-white bg-secondary collapse" id="ajuda" data-parent="#accordion">
@@ -176,7 +176,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-white bg-dark container" data-toggle="collapse" data-target="#video" aria-controls="video">
+                            <div class="text-white bg-dark container btn-sm" data-toggle="collapse" data-target="#video" aria-controls="video">
                                 <i class="fa fa-play"></i> <span class="SmarginLeft">Video</span>
                             </div>
                             <div class="text-white bg-secondary collapse show" id="video" data-parent="#accordion">
@@ -195,16 +195,29 @@
                     <div class="col-7" >
                         <div class="container">
                             <div class="Sprin text-center">
-                                <h4>Videos</h4>
+                                <h4>Postado Recentemente</h4>
                             </div>
-                            <div class="container text-center">
-                                <video class="img-fluid" 
+                            <div class="container text-center bg-secondary rounded-top">
+                                <div class="mgT5 text-white">
+                                    <h4>Assunto X</h4>
+                                    <hr>
+                                </div>
+                                <video class="img-fluid mgT5 rounded" 
                                     type="video/mp4"
                                     src="./video/mov_bbb.mp4" 
-                                    controls
                                     width="650px"
-                                    height="auto">
+                                    height="auto"
+                                    id="video1">
                                 </video>
+                                <div class="container">
+                                    <div class="">
+                                        <button class="btn btn-outline-danger" onclick="playPause()"><i class="fa fa-play"></i></button> 
+                                        <button class="btn btn-outline-danger" onclick="makeBig()"><i class="fa fa-arrows-alt"></i></button>
+                                        <button class="btn btn-outline-danger" onclick="makeSmall()"><i class="fa fa-compress"></i></button>
+                                        <button class="btn btn-outline-danger" onclick="makeNormal()"><i class="fa fa-expand"></i></button>
+                                    </div>
+                                    <div class="mgT5"><hr></div>
+                                </div>
                             </div>
                             <hr>
 
@@ -268,7 +281,7 @@
 
                             <div class="container">
 
-                                <div class="btn btn-success btn-block" data-toggle="modal" data-target="#janela">
+                                <div class="btn btn-success btn-block " data-toggle="modal" data-target="#janela">
                                     REQUISITAR VIDEO
                                 </div>
 
@@ -366,12 +379,12 @@
                     </div>
                     
                     <div class="col-3">
-                        <div class="container" data-toggle="collapse" data-target="#areaS" aria-controls="areaS">
+                        <div class="container btn-sm btn-info" data-toggle="collapse" data-target="#areaS" aria-controls="areaS">
                             Acontecimentos
                         </div>    
                             <div class="collapse show container " id="areaS">
                         
-                                <div class="text-white bg-dark container" data-toggle="collapse" data-target="#noticia" aria-controls="noticia">
+                                <div class="text-white bg-dark container btn-sm " data-toggle="collapse" data-target="#noticia" aria-controls="noticia">
                                     Noticias
                                 </div>
                                 <div class="text-white bg-secondary collapse" id="noticia">
@@ -382,7 +395,7 @@
 
                                 <div class="Hlinha"></div>
 
-                                <div class="text-white bg-dark container" data-toggle="collapse" data-target="#enquete" aria-controls="enquete">
+                                <div class="text-white bg-dark container btn-sm " data-toggle="collapse" data-target="#enquete" aria-controls="enquete">
                                     Enquete
                                 </div>
                                 <div class="text-white bg-secondary collapse" id="enquete">
@@ -393,7 +406,7 @@
 
                                 <div class="Hlinha"></div>
 
-                                <div class="text-white bg-dark container" data-toggle="collapse" data-target="#work" aria-controls="work">
+                                <div class="text-white bg-dark container btn-sm " data-toggle="collapse" data-target="#work" aria-controls="work">
                                     Atividades
                                 </div>
                                 <div class="text-white bg-secondary collapse" id="work">
@@ -404,7 +417,7 @@
 
                                 <div class="Hlinha"></div>
 
-                                <div class="text-white bg-dark container" data-toggle="collapse" data-target="#avaliacao" aria-controls="avaliacao">
+                                <div class="text-white bg-dark container btn-sm " data-toggle="collapse" data-target="#avaliacao" aria-controls="avaliacao">
                                     Avaliação
                                 </div>
                                 <div class="text-white bg-secondary collapse" id="avaliacao">
@@ -415,7 +428,7 @@
 
                                 <div class="Hlinha"></div>
 
-                                <div class="text-white bg-dark container" data-toggle="collapse" data-target="#mensagemforum" aria-controls="mensagemforum">
+                                <div class="text-white bg-dark container btn-sm " data-toggle="collapse" data-target="#mensagemforum" aria-controls="mensagemforum">
                                     Mensagem Forum
                                 </div>
                                 <div class="text-white bg-secondary collapse" id="mensagemforum">
@@ -441,6 +454,29 @@
 
     </div><!-- container-fluid -->
 
+
+    <script> 
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 700; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        </script> 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Popper JS -->
