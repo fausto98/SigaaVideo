@@ -9,9 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-</head>
-
-<style>
+  <style>
     
     .link {
         margin-top:10px;
@@ -20,6 +18,7 @@
         padding: 25px ;
         
     }
+    
     .link a {
         width: auto;
         display: block;
@@ -43,6 +42,10 @@
         background-color:rgba(0, 123, 255, 0.90) ;
     }
 
+    .container {
+        align-items: center;
+    }
+
     .footer { 
         display: block;
         position: absolute;
@@ -63,20 +66,29 @@
         font-family: Roboto-Regular,sans-serif;
     }
 
+    .logo-fluid {
+        min-width: 100px;
+        max-width: 20%;
+        width: auto;    
+    }
+
     .logo {
-        display: block;
-        height: 90px;
+        width: auto;
         margin-top: 60px;
-        margin-right: auto;
-        margin-left: auto;
         margin-bottom: 20px;
         padding-top: 15px;
     }
+    .icon-fluid {
+        min-width: 45px;
+        max-width: 100%;
+        width: auto;
 
-    .icons {
+    }
+    .icon {
         display: block;
+        width: auto;
         margin-left: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         width: 50px;
     }
 
@@ -88,7 +100,7 @@
 
 
     .divider {
-        background-color: rgba(0, 123, 255); 
+        background-color: rgb(0, 123, 255); 
         display: block;
         height: 6px;
         width: 100%;
@@ -105,23 +117,9 @@
         .footer {display: none;}
     }
 
-    /*
-    #teste1 {
-        background-color: red; 
-    }
-  
-    #teste2 {
-        background-color: blue; 
-    }
-    
-    #teste3 {
-        background-color: green; 
-    }
-    #teste4 {
-        background-color: darkcyan;
-    }
-    */
-</style>
+</style>  
+
+</head>
 
 <body>
     
@@ -129,11 +127,11 @@
         <div class="header row container">
                 IFAL - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
         </div>
-        <form id="teste4" class="container form-horizontal">
+        <form class="container form-horizontal">
             
-            <img id="sigaa_logo" class="logo" src=".\img\sigga_logo_new.png" alt="Sigga_Logo"/>
+            <img id="sigaa_logo" class="d-block mx-auto logo logo-fluid" src="./img/sigga_logo_new.png" alt="Sigga_Logo"/>
             
-            <div id="teste3"  class="center form-group col-sm-12 col-md-8 col-lg-6">
+            <div class="center form-group col-sm-12 col-md-8 col-lg-6">
 
                 <!--Login-->
                 <label for="login" class="control-label col-sm-2">Login </label>
@@ -147,29 +145,29 @@
                 </div>
 
                 <!--Checkbox-->
-                <div id="teste2" class="checkbox form col-sm-12">
+                <div class="checkbox form col-sm-12">
                     <label><input type="checkbox">Remember-me</label>
                 </div>         
 
             </div>
 
             <!--Button Enter-->
-            <div id="teste2" class="center col-sm-12">
+            <div class="center col-sm-12">
                     <button  onclick="tela2('https://www.google.com')" type="button" class="center btn btn-primary btn-custom shadow"> Enter </button>
             </div>
 
-            <div align="center" class="divider col-sm-12 col-md-8 col-lg-6"></div>
+            <div class="divider col-sm-12 col-md-8 col-lg-6"></div>
 
             <!--Cadastro Aluno/Professor-->
-            <div id="teste1" class="center col-sm-12 col-md-12 col-lg-6 ">
-                <div align="center" class="link">
-                    <div id="teste2" align="center" class="center col-sm-6 ">
-                        <img class="icons" src=".\img\student.png" alt="aluno"/>
-                        <a href="#" class=" shadow btn-custom">cadastro aluno</a>
+            <div class="container col-sm-12 col-lg-6 ">
+                <div class="link col-12">
+                    <div class="center col-sm-6 ">
+                        <div class="center col-5 "><img class="center icon icon-fluid" src="./img/student.png" alt="aluno"/></div> 
+                        <a href="#" class=" shadow btn-custom center col-12">Cadastro Aluno</a>
                     </div>
-                    <div id="teste4" class="center col-sm-6" >
-                        <img  class="icons" src=".\img\professor.png" alt="professor"/> 
-                        <a href="#" class="shadow btn-custom">cadastro professor</a>
+                    <div class="center col-sm-6" >
+                        <div class="center col-5"><img  class="center icon icon-fluid" src="./img/professor.png" alt="professor"/></div> 
+                        <a href="#" class="shadow btn-custom col-12 center">Cadastro Professor</a>
                     </div>    
                 </div>
                 
@@ -183,6 +181,13 @@
         </div>
         
     </div>
-<script type="text/javascript">const tela2 = (url) => window.location.href = "https://google.com";</script>     
+
+<script type="text/javascript">const tela2 = (url) => window.location.href = "../sigaa-2/index.tela2.html";</script>
+<!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
 </body>
 </html>
