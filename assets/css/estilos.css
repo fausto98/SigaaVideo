@@ -1,0 +1,55 @@
+.Hlinha {
+    margin-top: 2px;
+    border-top: 1px solid #fff;
+}
+
+.Hgpbtn {
+    margin-top: 20px; 
+}
+
+.HalinhaTxt{
+    margin-top: 25px;
+}
+
+.Hfonts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.Slinhah{
+    border-right: 1px solid #fff;
+}
+
+.Sprin {
+    margin-top: 15px;
+}
+
+.SmarginLeft {
+    padding-left: 10px;
+}
+
+.SprinC {
+    overflow: auto;
+    display: block;
+    visibility: visible;
+}
+.Sestilo {
+    padding-left: 20px;
+}
+
+.Sestilo:hover {
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
+}
+
+.Sestilo:active {
+    background-color: #777;
+    color: #fff;
+    font-weight: bold;
+}
+
+.Fmargin {
+    margin-top: 50px;
+}
+
